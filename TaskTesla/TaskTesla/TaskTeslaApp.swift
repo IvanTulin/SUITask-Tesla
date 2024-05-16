@@ -11,7 +11,9 @@ import SwiftUI
 struct TaskTeslaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartScreenView()
+            //ContentView()
+            //DisclosureGroupView()
         }
     }
 }

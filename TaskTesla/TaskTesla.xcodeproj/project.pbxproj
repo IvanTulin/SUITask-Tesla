@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		BA5FBEC42BF281E700C99757 /* TaskTeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FBEC32BF281E700C99757 /* TaskTeslaApp.swift */; };
-		BA5FBEC62BF281E700C99757 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FBEC52BF281E700C99757 /* ContentView.swift */; };
+		BA5FBEC62BF281E700C99757 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FBEC52BF281E700C99757 /* SettingsScreenView.swift */; };
 		BA5FBEC82BF281E800C99757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5FBEC72BF281E800C99757 /* Assets.xcassets */; };
 		BA5FBECB2BF281E800C99757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5FBECA2BF281E800C99757 /* Preview Assets.xcassets */; };
+		BA610DD52BF3AB500066AA21 /* NeumorphismUnSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DD42BF3AB500066AA21 /* NeumorphismUnSelected.swift */; };
+		BA610DD72BF3AB6C0066AA21 /* NeumorphismSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DD62BF3AB6C0066AA21 /* NeumorphismSelected.swift */; };
+		BA610DD92BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DD82BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift */; };
+		BA610DDB2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DDA2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift */; };
+		BA610DDD2BF3BD610066AA21 /* ClimateSystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DDC2BF3BD610066AA21 /* ClimateSystemsView.swift */; };
+		BA610DE02BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA610DDF2BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift */; };
+		BA6928B82BF4DE77003B220E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6928B72BF4DE77003B220E /* BlurView.swift */; };
+		BA6928BA2BF4DFF9003B220E /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6928B92BF4DFF9003B220E /* Corner.swift */; };
+		BA6C46452BF3364A008F2AE6 /* ButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C46442BF3364A008F2AE6 /* ButtomSheetView.swift */; };
+		BA6C46472BF33780008F2AE6 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C46462BF33780008F2AE6 /* DisclosureGroupView.swift */; };
+		BA6C464B2BF347CC008F2AE6 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C464A2BF347CC008F2AE6 /* View + Extension.swift */; };
+		BA6C464D2BF35ADF008F2AE6 /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C464C2BF35ADF008F2AE6 /* StartScreenView.swift */; };
+		BA975EBE2BF48FDC005831B9 /* ClimateControlSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA5FBEC02BF281E700C99757 /* TaskTesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5FBEC32BF281E700C99757 /* TaskTeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTeslaApp.swift; sourceTree = "<group>"; };
-		BA5FBEC52BF281E700C99757 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA5FBEC52BF281E700C99757 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 		BA5FBEC72BF281E800C99757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5FBECA2BF281E800C99757 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA610DD42BF3AB500066AA21 /* NeumorphismUnSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUnSelected.swift; sourceTree = "<group>"; };
+		BA610DD62BF3AB6C0066AA21 /* NeumorphismSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismSelected.swift; sourceTree = "<group>"; };
+		BA610DD82BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismUnSelectedCircule.swift; sourceTree = "<group>"; };
+		BA610DDA2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismSelectedSettings.swift; sourceTree = "<group>"; };
+		BA610DDC2BF3BD610066AA21 /* ClimateSystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateSystemsView.swift; sourceTree = "<group>"; };
+		BA610DDF2BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateSystemsViewModel.swift; sourceTree = "<group>"; };
+		BA6928B72BF4DE77003B220E /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		BA6928B92BF4DFF9003B220E /* Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
+		BA6C46442BF3364A008F2AE6 /* ButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomSheetView.swift; sourceTree = "<group>"; };
+		BA6C46462BF33780008F2AE6 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
+		BA6C464A2BF347CC008F2AE6 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
+		BA6C464C2BF35ADF008F2AE6 /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
+		BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateControlSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +78,12 @@
 			isa = PBXGroup;
 			children = (
 				BA5FBEC32BF281E700C99757 /* TaskTeslaApp.swift */,
-				BA5FBEC52BF281E700C99757 /* ContentView.swift */,
+				BA6C464C2BF35ADF008F2AE6 /* StartScreenView.swift */,
+				BA5FBEC52BF281E700C99757 /* SettingsScreenView.swift */,
+				BA610DDE2BF3E5AB0066AA21 /* ClimateSystem */,
+				BA610DD32BF3AB240066AA21 /* Modifiers */,
+				BA6C46492BF34788008F2AE6 /* Extensions */,
+				BA6C46482BF34557008F2AE6 /* LessonsTask */,
 				BA5FBEC72BF281E800C99757 /* Assets.xcassets */,
 				BA5FBEC92BF281E800C99757 /* Preview Content */,
 			);
@@ -65,6 +96,46 @@
 				BA5FBECA2BF281E800C99757 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA610DD32BF3AB240066AA21 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BA610DD42BF3AB500066AA21 /* NeumorphismUnSelected.swift */,
+				BA610DDA2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift */,
+				BA610DD82BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift */,
+				BA610DD62BF3AB6C0066AA21 /* NeumorphismSelected.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		BA610DDE2BF3E5AB0066AA21 /* ClimateSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BA610DDC2BF3BD610066AA21 /* ClimateSystemsView.swift */,
+				BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */,
+				BA610DDF2BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift */,
+				BA6928B72BF4DE77003B220E /* BlurView.swift */,
+				BA6928B92BF4DFF9003B220E /* Corner.swift */,
+			);
+			path = ClimateSystem;
+			sourceTree = "<group>";
+		};
+		BA6C46482BF34557008F2AE6 /* LessonsTask */ = {
+			isa = PBXGroup;
+			children = (
+				BA6C46442BF3364A008F2AE6 /* ButtomSheetView.swift */,
+				BA6C46462BF33780008F2AE6 /* DisclosureGroupView.swift */,
+			);
+			path = LessonsTask;
+			sourceTree = "<group>";
+		};
+		BA6C46492BF34788008F2AE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA6C464A2BF347CC008F2AE6 /* View + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +208,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA5FBEC62BF281E700C99757 /* ContentView.swift in Sources */,
+				BA5FBEC62BF281E700C99757 /* SettingsScreenView.swift in Sources */,
+				BA6928B82BF4DE77003B220E /* BlurView.swift in Sources */,
+				BA610DD52BF3AB500066AA21 /* NeumorphismUnSelected.swift in Sources */,
+				BA6C46472BF33780008F2AE6 /* DisclosureGroupView.swift in Sources */,
+				BA6928BA2BF4DFF9003B220E /* Corner.swift in Sources */,
 				BA5FBEC42BF281E700C99757 /* TaskTeslaApp.swift in Sources */,
+				BA610DD72BF3AB6C0066AA21 /* NeumorphismSelected.swift in Sources */,
+				BA6C464D2BF35ADF008F2AE6 /* StartScreenView.swift in Sources */,
+				BA6C464B2BF347CC008F2AE6 /* View + Extension.swift in Sources */,
+				BA610DD92BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift in Sources */,
+				BA6C46452BF3364A008F2AE6 /* ButtomSheetView.swift in Sources */,
+				BA610DDD2BF3BD610066AA21 /* ClimateSystemsView.swift in Sources */,
+				BA610DDB2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift in Sources */,
+				BA610DE02BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift in Sources */,
+				BA975EBE2BF48FDC005831B9 /* ClimateControlSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
