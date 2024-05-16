@@ -24,6 +24,8 @@
 		BA6C464B2BF347CC008F2AE6 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C464A2BF347CC008F2AE6 /* View + Extension.swift */; };
 		BA6C464D2BF35ADF008F2AE6 /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C464C2BF35ADF008F2AE6 /* StartScreenView.swift */; };
 		BA975EBE2BF48FDC005831B9 /* ClimateControlSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */; };
+		BAA0F13D2BF5E7A9004B203F /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F13C2BF5E7A9004B203F /* PathView.swift */; };
+		BAA0F13F2BF5FB9A004B203F /* MatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0F13E2BF5FB9A004B203F /* MatchedGeometryEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		BA6C464A2BF347CC008F2AE6 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
 		BA6C464C2BF35ADF008F2AE6 /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
 		BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateControlSlider.swift; sourceTree = "<group>"; };
+		BAA0F13C2BF5E7A9004B203F /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+		BAA0F13E2BF5FB9A004B203F /* MatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				BA6C46442BF3364A008F2AE6 /* ButtomSheetView.swift */,
+				BAA0F13C2BF5E7A9004B203F /* PathView.swift */,
+				BAA0F13E2BF5FB9A004B203F /* MatchedGeometryEffectView.swift */,
 				BA6C46462BF33780008F2AE6 /* DisclosureGroupView.swift */,
 			);
 			path = LessonsTask;
@@ -209,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5FBEC62BF281E700C99757 /* SettingsScreenView.swift in Sources */,
+				BAA0F13D2BF5E7A9004B203F /* PathView.swift in Sources */,
 				BA6928B82BF4DE77003B220E /* BlurView.swift in Sources */,
 				BA610DD52BF3AB500066AA21 /* NeumorphismUnSelected.swift in Sources */,
 				BA6C46472BF33780008F2AE6 /* DisclosureGroupView.swift in Sources */,
@@ -218,6 +225,7 @@
 				BA6C464D2BF35ADF008F2AE6 /* StartScreenView.swift in Sources */,
 				BA6C464B2BF347CC008F2AE6 /* View + Extension.swift in Sources */,
 				BA610DD92BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift in Sources */,
+				BAA0F13F2BF5FB9A004B203F /* MatchedGeometryEffectView.swift in Sources */,
 				BA6C46452BF3364A008F2AE6 /* ButtomSheetView.swift in Sources */,
 				BA610DDD2BF3BD610066AA21 /* ClimateSystemsView.swift in Sources */,
 				BA610DDB2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift in Sources */,
