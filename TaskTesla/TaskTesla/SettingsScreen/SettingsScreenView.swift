@@ -10,25 +10,62 @@ import SwiftUI
 struct SettingsScreenView: View {
     var body: some View {
         NavigationView {
-            createBackgroundStackView {
-                VStack {
-                    HStack {
-                        headerView
-                        Spacer().frame(width: 177)
-                        profileView
+            TeslaTabView(selection: $selection, isTabbarVisible: $isTabbarVisible) {
+                createBackgroundStackView {
+                    VStack {
+                        HStack {
+                            headerView
+                            Spacer().frame(width: 177)
+                            profileView
+                        }
+                        
+                        carView
+                        controlPanelView
+                        Spacer()
+                            .frame(height: 260)
+                            .edgesIgnoringSafeArea(.bottom)
                     }
-                    carView
-                    controlPanelView
-                    Spacer()
-                        .frame(height: 40)
+                    .offset(y: -70)
+                    .padding(.top, 140)
+                    .navigationBarBackButtonHidden(true)
+                    .onAppear {
+                        isTabbarVisible = true
+                    }
                 }
-                .padding(.top, -200)
+                .myTabItem {
+                    TabItem(text: "", icon: "teslaIc")
+                }
+                .opacity(selection == 0 ? 1 : 0)
                 
+                // Экран зарядки
+               ChargingView()
+                    .myTabItem {
+                        TabItem(text: "", icon: "Stats")
+                    }
+                    .opacity(selection == 1 ? 1 : 0)
+                
+                // Экран геолакации
+                Color.blue
+                    .myTabItem {
+                        TabItem(text: "", icon: "Explore")
+                    }
+                    .opacity(selection == 2 ? 1 : 0)
+                
+                // Экран профиля
+                Color.red
+                    .myTabItem {
+                        TabItem(text: "", icon: "profileMore")
+                    }
+                    .opacity(selection == 3 ? 1 : 0)
             }
+            .edgesIgnoringSafeArea(.bottom)
+            
         }
         .navigationBarBackButtonHidden(true)
     }
     
+    @State var isTabbarVisible = true
+    @State var selection = 0
     @State var isShowClimateSystemScreen = false
     @State var isCarClose = false
     @State var tagSelected = 0
@@ -41,7 +78,6 @@ struct SettingsScreenView: View {
         LinearGradient(colors:  [Color.darkShadow.opacity(0.7), Color.gray.opacity(0.30)], startPoint: .topLeading, endPoint: .bottomLeading )
     }
 
-    
     private var darkGradientForBackground: LinearGradient {
         LinearGradient(colors: [.black,.background, .gray], startPoint: .topLeading, endPoint: .bottomTrailing)
     }
@@ -87,6 +123,7 @@ struct SettingsScreenView: View {
                     }
                     if index == 2 {
                         isShowClimateSystemScreen.toggle()
+                        isTabbarVisible.toggle()
                         print(index)
                     }
                     

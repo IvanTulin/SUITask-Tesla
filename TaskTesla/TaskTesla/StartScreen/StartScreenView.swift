@@ -10,33 +10,54 @@ import SwiftUI
 struct StartScreenView: View {
     var body: some View {
         NavigationView {
-            createBackgroundStackView {
-                VStack(spacing: 42) {
-                    
-                    NavigationLink(destination: SettingsScreenView(), isActive: $isShowingSettingsView) {
-                        VStack {
-                            settingsView
+            if !isShowLogo {
+                ZStack {
+                    TeslaLogo()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 300, height: 300)
+                    TeslaLogo()
+                        .trim(from: 0, to: isAnimating ? 1 : 0)
+                        .stroke(gradient.opacity(0.5), style: StrokeStyle(lineWidth: 2, lineCap: .round))
+                        .animation(Animation.linear(duration: 4).repeatForever(autoreverses: false), value: isAnimating)
+                        .onAppear {
+                            isAnimating = true
                         }
+                    .frame(width: 300, height: 300)
+                }
+            } else {
+                createBackgroundStackView {
+                    VStack(spacing: 42) {
+                        NavigationLink(destination: SettingsScreenView(), isActive: $isShowingSettingsView) {
+                            VStack {
+                                settingsView
+                            }
+                        }
+                        headerView
+                            .offset(x: isShowWelcone ? 0 : -500)
+                            .animation(.linear, value: isShowWelcone)
+                        carView
+                        closeCarControllView
                     }
-                    
-                    headerView
-                        .offset(x: isShowWelcone ? 0 : -500)
-                        .animation(.linear, value: isShowWelcone)
-                    
-                    carView
-                    
-                    closeCarControllView
                 }
             }
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.9) {
+                isShowLogo = true
+            }
+            isShowLogo = false
+        }
+        .navigationBarBackButtonHidden(true)
     }
     
     
+    @State var isShowLogo = false
     @State var isShowWelcone = false
     @State var isShowingSettingsView = false
     @State var isCarClose = false
     @State var isShowSettings = false
     @State var tagSelected = 0
+    @State private var isAnimating = false
     
     private var gradient: LinearGradient {
         LinearGradient(colors:  [Color("topGradient"), Color("bottomGradient")], startPoint: .bottom, endPoint: .top )
@@ -80,7 +101,7 @@ struct StartScreenView: View {
     
     private var closeCarControllView: some View {
         Button {
-            withAnimation(.linear) {
+            withAnimation(.linear(duration: 1.5)) {
                 isCarClose.toggle()
             }
             if isCarClose {

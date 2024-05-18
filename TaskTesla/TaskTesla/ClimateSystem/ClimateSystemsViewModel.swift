@@ -10,11 +10,9 @@ import Foundation
 class ClimateSystemsViewModel: ObservableObject {
     @Published var nameSettings = ["Ac", "Fan", "Heat", "Auto"]
     @Published var images = ["ListBullet", "fanBullet", "heatBullet", "autoBullet"]
-    @Published var degrees: [Double] = [15.0, 15.0, 15.0, 15.0]
+    @Published var degrees = [15, 15, 15, 15]
+    @Published var offset: [Double] = [0, 0, 0, 0]
     @Published var degreeAc: Double = 15.0
     @Published var disabled: [Bool] = [false, true, true, true]
     
-    init() {
-        degreeAc = degrees[0]
-    }
 }

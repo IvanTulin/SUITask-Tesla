@@ -12,8 +12,6 @@ struct TaskTeslaApp: App {
     var body: some Scene {
         WindowGroup {
             StartScreenView()
-            //ContentView()
-            //DisclosureGroupView()
         }
     }
 }

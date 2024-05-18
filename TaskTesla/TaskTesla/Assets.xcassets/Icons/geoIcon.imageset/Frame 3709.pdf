@@ -1,0 +1,275 @@
+%PDF-1.7
+
+1 0 obj
+  << /Length 2 0 R >>
+stream
+0.463867 0 0.063965 0.000000 0.338867 0.768555 d1
+
+endstream
+endobj
+
+2 0 obj
+  50
+endobj
+
+3 0 obj
+  << /Length 4 0 R >>
+stream
+0.870117 0 0.079102 0.000000 0.795898 0.614746 d1
+
+endstream
+endobj
+
+4 0 obj
+  50
+endobj
+
+5 0 obj
+  << /Length 6 0 R >>
+stream
+0.281250 0 0.000000 0.000000 0.281250 1.000000 d1
+
+endstream
+endobj
+
+6 0 obj
+  50
+endobj
+
+7 0 obj
+  << /Length 8 0 R >>
+stream
+0.569336 0 0.047363 0.000000 0.513672 0.751953 d1
+
+endstream
+endobj
+
+8 0 obj
+  50
+endobj
+
+9 0 obj
+  << /Length 10 0 R >>
+stream
+0.961426 0 0.136719 -0.209961 0.824707 1.269531 d1
+
+endstream
+endobj
+
+10 0 obj
+  51
+endobj
+
+11 0 obj
+  << /Length 12 0 R >>
+stream
+0.658691 0 0.089844 0.000000 0.630371 0.794434 d1
+
+endstream
+endobj
+
+12 0 obj
+  50
+endobj
+
+13 0 obj
+  << /Length 14 0 R >>
+stream
+0.296875 0 0.084961 -0.004883 0.211914 0.211914 d1
+
+endstream
+endobj
+
+14 0 obj
+  51
+endobj
+
+15 0 obj
+  [ 0.961426 0.870117 0.281250 0.463867 0.569336 0.658691 0.296875 ]
+endobj
+
+16 0 obj
+  << /Length 17 0 R >>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (FigmaPDF)
+   /Ordering (FigmaPDF)
+   /Supplement 0
+>> def
+/CMapName /A-B-C def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+1 beginbfchar
+<00> <DBC0DEE6>
+endbfchar
+1 beginbfchar
+<01> <006D>
+endbfchar
+1 beginbfchar
+<02> <0020>
+endbfchar
+1 beginbfchar
+<03> <0031>
+endbfchar
+1 beginbfchar
+<04> <0037>
+endbfchar
+1 beginbfchar
+<05> <004B>
+endbfchar
+1 beginbfchar
+<06> <002E>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+
+17 0 obj
+  552
+endobj
+
+18 0 obj
+  << /Subtype /Type3
+     /CharProcs << /C3 1 0 R
+                   /C1 3 0 R
+                   /C2 5 0 R
+                   /C4 7 0 R
+                   /C0 9 0 R
+                   /C5 11 0 R
+                   /C6 13 0 R
+                >>
+     /Encoding << /Type /Encoding
+                  /Differences [ 0 /C0 /C1 /C2 /C3 /C4 /C5 /C6 ]
+               >>
+     /Widths 15 0 R
+     /FontBBox [ 0.000000 0.000000 0.000000 0.000000 ]
+     /FontMatrix [ 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 ]
+     /Type /Font
+     /ToUnicode 16 0 R
+     /FirstChar 0
+     /LastChar 6
+     /Resources << >>
+  >>
+endobj
+
+19 0 obj
+  << /Length 20 0 R
+     /Range [ 0.000000 1.000000 0.000000 1.000000 0.000000 1.000000 ]
+     /Domain [ 0.000000 1.000000 ]
+     /FunctionType 4
+  >>
+stream
+{  0.184314 exch 0.722727 exch 1.000000 exch dup 0.000000 gt { exch pop exch pop exch pop dup 0.000000 sub 0.434215 mul 0.184314 add exch dup 0.000000 sub 0.202046 mul 0.722727 add exch dup 0.000000 sub -0.148726 mul 1.000000 add exch } if dup 1.000000 gt { exch pop exch pop exch pop 0.618528 exch 0.924773 exch 0.851274 exch } if pop }
+endstream
+endobj
+
+20 0 obj
+  337
+endobj
+
+21 0 obj
+  << /ExtGState << /E1 << /ca 0.600000 >> >>
+     /Font << /F1 18 0 R >>
+     /Pattern << /P1 << /Matrix [ 0.000000 -34.000000 34.000000 0.000000 -24.520020 54.000000 ]
+                        /Shading << /Coords [ 0.000000 0.000000 1.000000 0.000000 ]
+                                    /ColorSpace /DeviceRGB
+                                    /Function 19 0 R
+                                    /Domain [ 0.000000 1.000000 ]
+                                    /ShadingType 2
+                                    /Extend [ true true ]
+                                 >>
+                        /PatternType 2
+                        /Type /Pattern
+                     >> >>
+  >>
+endobj
+
+22 0 obj
+  << /Filter /FlateDecode
+     /Length 23 0 R
+  >>
+stream
+x≠ñÀnd5@˜˜+º$ã8Æ*?∑´≤®ï!HI$»àÔÁTw⁄◊!â4#MØ‹«◊ÆrΩØæª˘˜Ø√Õœ?ºﬂ˛≤]Ìˇè€ﬂõƒt¸Öt^\Œ’‹1∑1z
+:˜˜€’á?>}∫˘Á¡/∫˙ ·Ò¿u¢⁄j“cπÂÓ7I±hÎªêªMF“J*ÁO≠A’bñî’Çñÿz*Õ|ﬂ,ïúÇÂÛ˘˝ ù6ç-çfuÅó≠%)Û¬ÆºÎÖíáÌv˚∏=l?}ÆIdJ∞µYFl2?|πpÛ§®πï2†Mk©äunQ;iICéºW≥”Öôñ⁄s–®<√úHñ ñ∆‹eXﬁ…a´1’nHòÏncŸj+=\NıÔ6ãCáå·∞Î…è‘‘m“ìK°ƒdVá¯Wπé¶ø'k"l∑, &¸)Uˆñã`gPÌ¯8†Uí\ÒıÇÀW9›7°ı^€Òhk›‘QiCx®à4;ÚÁ-h∫≥ª≠«.µÑ	VN-p`óú	ÒÄ8™GXı¢Ö0 n‘™Yhqî1P
+$='Ç≈£J˙Y∞œ \ÜÀ¿@]ì9sãewœtXÌòl!On˝ZQˆÓz;ÔÃSs±Ó˝?ﬁÆ…€Ôyﬂ˘ãÎè€Ø·õﬂX^Ñﬂ√ıè€˚Î£zWÔ%¸˘¯yZNB:µ⁄KqÒ)ÒZ]Ùæ®©…ßLê*m¥pâΩNá<HÕn‚cø⁄„=®ü 	“µ„OèÈl	∑≠©√¶±≤â-FPk¶(¿å<SR"X1€ÆÕklUÊv#F%àÏÔinwk≈1äy˙ﬁ†“ë^ÿc)Rxà<!∂û!
+òP=Cc’’˜€–Ú®ª‘â®¢7ê í=âî¢Ã€v¥H]·ìv˚mÛª‘â<‡G3v/ñÒt∂ä‘g‹S÷*°∫Pj%E®§Å{©ë≥+\º=(H˜º 8LÅ√Ì¶÷ÂAÍæïBCÔæ¢ß;‹[°2r·˛.ïHa0$Ø\©:πÙÅ„&•äÏT®Î9%ƒ2ˆ√	ÂäR·°56Í_]ÂA{TKR◊∏Éf(∂…‰\÷Æ¥S`ã}P˙ºM€pk.Ùa/d;§±Põ)ñ(êàjjÈëûï}ïÆLº
+WU11≠\«Ωì9à…‚eeÂñËV«"ºSírßGwyZÈ4É	≥DØ ◊¶SπÉ—X	PöÿDáÕ(°£égﬂ∑ï€jWÒR1b≈º'ûŒûÈ™"Îö®oQ|›ö˜‹ï¢¯ÙV∞dœ£.
+—-…˚L£;#Ñ∑Ë≥R;!é∂ mTLÊ¶πÿƒF_Ò≥gä,O*“OC¿Íágîh»çN˙åbg.¢YÉ=ö©¬˚®G≥+^i≤‚MÛ	!ú
+ZË®jgàè€S°ß0)ÍcüøeÙJ£˜£T%∆S-;D¶ûN•v2∏xÕ¿1$Ï†åÔ"Ë
+trVqüãcˆX (’‚…√^r.]¨÷`Ô‘Ë9JlúBnBTôêëÄït‡ﬁØ¬’÷_84L≤∂„/^4Ê7gªp+d!
+˚‘ãêπÄV»HÊ _0~4ˇØtÓH4ˇ_|ﬂÀNˆˇ≤N!ˇs*Ä°
+endstream
+endobj
+
+23 0 obj
+  1218
+endobj
+
+24 0 obj
+  << /Annots []
+     /Type /Page
+     /MediaBox [ 0.000000 0.000000 40.000000 54.000000 ]
+     /Resources 21 0 R
+     /Contents 22 0 R
+     /Parent 25 0 R
+  >>
+endobj
+
+25 0 obj
+  << /Kids [ 24 0 R ]
+     /Count 1
+     /Type /Pages
+  >>
+endobj
+
+26 0 obj
+  << /Pages 25 0 R
+     /Type /Catalog
+  >>
+endobj
+
+xref
+0 27
+0000000000 65535 f
+0000000010 00000 n
+0000000116 00000 n
+0000000137 00000 n
+0000000243 00000 n
+0000000264 00000 n
+0000000370 00000 n
+0000000391 00000 n
+0000000497 00000 n
+0000000518 00000 n
+0000000626 00000 n
+0000000648 00000 n
+0000000756 00000 n
+0000000778 00000 n
+0000000887 00000 n
+0000000909 00000 n
+0000000995 00000 n
+0000001605 00000 n
+0000001628 00000 n
+0000002259 00000 n
+0000002782 00000 n
+0000002805 00000 n
+0000003508 00000 n
+0000004812 00000 n
+0000004836 00000 n
+0000005013 00000 n
+0000005089 00000 n
+trailer
+<< /ID [ (some) (id) ]
+   /Root 26 0 R
+   /Size 27
+>>
+startxref
+5150
+%%EOF

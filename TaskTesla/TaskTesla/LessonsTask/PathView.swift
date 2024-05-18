@@ -115,8 +115,6 @@ struct DomeShape: Shape {
 }
 
 struct LogoTeslaView: Shape {
-    
-    
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
@@ -169,6 +167,11 @@ struct LogoTeslaTwo: Shape {
 struct PathView: View {
     let gradient = LinearGradient(colors: [Color.pink, Color.purple], startPoint: .topTrailing, endPoint: .bottomLeading)
     
+    private var gradientSlider: LinearGradient {
+        LinearGradient(colors: [Color(.blue) , Color("topGradient").opacity(0.8), Color("bottomGradient").opacity(0.8)], startPoint: .topLeading, endPoint: .bottomTrailing )
+    }
+    
+    
     @State private var isAnimating = false
     
     @State var progress = 0.0
@@ -215,15 +218,20 @@ struct PathView: View {
 //        LogoTeslaView()
 //            .stroke(.blue, style: StrokeStyle(lineWidth: 8, lineCap: .round))
         
-        LogoTeslaTwo()
-            .trim(from: 0, to: isAnimating ? 1 : 0)
-            .stroke(.blue, style: StrokeStyle(lineWidth: 5, lineCap: .round))
-            .animation(Animation.linear(duration: 5).repeatForever(autoreverses: false), value: isAnimating)
-            .onAppear {
-                isAnimating = true
-            }
-//            .fill(.gray)
-            .frame(width: 380, height: 380)
+        ZStack {
+            LogoTeslaTwo()
+                .fill(.white.opacity(0.1))
+                .frame(width: 300, height: 300)
+            LogoTeslaTwo()
+                .trim(from: 0, to: isAnimating ? 1 : 0)
+                .stroke(gradientSlider.opacity(0.5), style: StrokeStyle(lineWidth: 2, lineCap: .round))
+                .animation(Animation.linear(duration: 4).repeatForever(autoreverses: false), value: isAnimating)
+                .onAppear {
+                    isAnimating = true
+                }
+            .frame(width: 300, height: 300)
+        }
+        .background(.darkShadow)
             
             
         
@@ -232,5 +240,7 @@ struct PathView: View {
 
 #Preview {
     PathView()
+        .environment(\.colorScheme,  .dark)
+
 }
 

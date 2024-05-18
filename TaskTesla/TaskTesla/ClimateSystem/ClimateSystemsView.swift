@@ -41,15 +41,16 @@ struct ClimateSystemsView: View {
     @State var isActivateAC = false
     @State var isShowSupportAlert = false
     @State var degree: Double = 15
-    @State var acDegree: Double = 0
+    @State var acDegree = 15
     
     @State private var selectedColor: Color = .blue
     @State private var currentMenuOffsetY: CGFloat = 0.0
     @State private var lastMenuOffsetY: CGFloat = 0.0
     @GestureState private var gesture = CGSize.zero
     
-    
-    private var sliderView = SliderView()
+    @State private var chengedValue = 0
+    @State private var circleProgree: Double = 0
+    @State private var offset: Double = 0
     
     private var gradient: LinearGradient {
         LinearGradient(colors:  [Color.darkShadow.opacity(0.7), Color.gray.opacity(0.30)], startPoint: .topLeading, endPoint: .bottomLeading )
@@ -65,6 +66,7 @@ struct ClimateSystemsView: View {
     private var darkGradientForBackground: LinearGradient {
         LinearGradient(colors: [.black,.background, .gray], startPoint: .topLeading, endPoint: .bottomTrailing)
     }
+    
     
     
     
@@ -157,9 +159,10 @@ struct ClimateSystemsView: View {
         DisclosureGroup(isExpanded: $isExpanded) {
             ForEach(climateSystemsModelView.images.indices, id: \.self) { index in
                 if index == 0 {
-                    createClimateSettings(name: climateSystemsModelView.nameSettings[index], image: climateSystemsModelView.images[index], value: $acDegree)
+                    createClimateSettings(name: climateSystemsModelView.nameSettings[index], image: climateSystemsModelView.images[index], value: $acDegree, offset: climateSystemsModelView.offset[index])
                 } else if index != 0 {
-                    createClimateSettings(name: climateSystemsModelView.nameSettings[index], image: climateSystemsModelView.images[index], value: $climateSystemsModelView.degrees[index])
+                    createClimateSettings(name: climateSystemsModelView.nameSettings[index], image: climateSystemsModelView.images[index], value: $climateSystemsModelView.degrees[index],
+                                          offset: climateSystemsModelView.offset[index])
                 }
             }
         } label: {
@@ -332,7 +335,7 @@ struct ClimateSystemsView: View {
         .gesture(dragGesture)
     }
     
-    private func createClimateSettings(name: String, image: String, value: Binding<Double>) -> some View {
+    private func createClimateSettings(name: String, image: String, value: Binding<Int>, offset: Double) -> some View {
         HStack {
             Text(name)
                 .font(.system(size: 22))
@@ -361,23 +364,21 @@ struct ClimateSystemsView: View {
             }
             .neumorphismSelectedBackCircule()
             
-            Spacer().frame(width: 28)
+            Spacer().frame(width: 1)
             
-                Slider(value: value, in: 15...30, step: 1)
+                
+
+            TeslaSlider(value: value, range: 15...30, step: 1.2, activeTrackColor: selectedColor, inactiveTrackColor: .gray, thumbImage: Image(.sliderLine), trackHeight: 10)
+                .frame(height: 20)
+                .padding()
+                .padding()
                     .tint(selectedColor)
-                    .shadow(color: selectedColor, radius: 2)
                     .frame(width: 195)
                     .onChange(of: value.wrappedValue, perform: { newValue in
-                        degree = newValue
+                        degree = Double(newValue)
                     })
-                    .onAppear {
-                        let progressCircleConfig = UIImage.SymbolConfiguration(scale: .medium)
-                        UISlider.appearance()
-                            .setThumbImage(
-                                UIImage(named: "sliderLine", variableValue: 0, configuration: progressCircleConfig), for: .normal)
-                    }
         }
-        .frame(width: 330, height: 65)
+        .frame(width: 360, height: 65)
     }
     
     private func onChangeMenuOffset() {
