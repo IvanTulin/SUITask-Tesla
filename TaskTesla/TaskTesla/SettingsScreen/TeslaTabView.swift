@@ -42,18 +42,27 @@ struct TeslaTabView<Content: View>: View {
             content
             ZStack {
                 if isTabbarVisible {
-                    ContolTabView()
-                        .fill(.darkShadow)
-                        .stroke( LinearGradient(colors: [.gray.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
-                        .frame(width: 400)
-                        .frame(height: 90)
-                        .shadow(color: .gray.opacity(0.15),radius: 5.5, x: -5, y: -5)
-                        .shadow(color: .black.opacity(0.95),radius: 20, x: 6, y: 6)
-                    HStack {
-                        Spacer()
-                        tabsView
-                        Spacer()
+                    VStack {
+                        Image(.plusIcon)
+                            .offset(y: 35)
+                        
+                        ZStack {
+                            ContolTabView()
+                                .fill(.darkShadow)
+                                .stroke( LinearGradient(colors: [.gray.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
+                                .frame(width: 400)
+                                .frame(height: 90)
+                                .shadow(color: .gray.opacity(0.15),radius: 5.5, x: -5, y: -5)
+                            .shadow(color: .black.opacity(0.95),radius: 20, x: 6, y: 6)
+                            HStack {
+                                Spacer()
+                                tabsView
+                                Spacer()
+                            }
+                        }
+                        
                     }
+                    
                 }
             }
         }

@@ -9,13 +9,11 @@ import SwiftUI
 
 struct ChargingView: View {
     var body: some View {
-        
         createBackgroundStackView {
             ScrollView {
                 VStack {
                     headerView
                         .padding(.top, 15)
-                    
                     ZStack {
                         carImage
                         
@@ -25,8 +23,8 @@ struct ChargingView: View {
                     
                     Spacer().frame(height: 19)
                     chargingBatteryView
-                    Spacer().frame(height: 9)
-                    batterySlider
+                    Spacer().frame(height: 79)
+                    //batterySlider
                     Spacer().frame(height: 30)
                     
                     VStack(alignment: .center) {
@@ -35,7 +33,6 @@ struct ChargingView: View {
                     .frame(width: UIScreen.main.bounds.width - 60 ,height: 300)
                 }
                 .offset(y: 29)
-                //.frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
     }
@@ -47,6 +44,10 @@ struct ChargingView: View {
     @State var valueOffset: Double = 0
     @State var chargeLevel: CGFloat = 0.0
     @State var isShomNearby = false
+    @State var value = 0
+    @State var offset = 0.0
+    @State var colorTop = Color.green
+    @State var colorBottom = Color.blue
     
     @State private var selectedColor: Color = .white
     
@@ -117,36 +118,23 @@ struct ChargingView: View {
     private var chargingBatteryView: some View {
         VStack {
             ZStack {
-                BatteryCharge()
-                    .fill(LinearGradient(colors: [.gray.opacity(0.5),.gray.opacity(0.2),.background, .black.opacity(0.1)], startPoint: .top, endPoint: .bottom))
-                    .frame(width: 274, height: 39)
-                
-                BatteryCharge()
-
-                    .trim(from: 0.0, to: CGFloat(valueDegrees) / 200)
-                    .fill(gradient)
-                    .frame(width: 274, height: 39)
-                    .animation(.linear(duration: 1))
-//                    .onAppear(perform: {
-//                        withAnimation(.linear(duration: 2)) {
-//                            chargeLevel = 1.0
-//                        }
-//                    })
+                ChargingSlider(value: $value, offset: $offset, colorTop: $colorTop, colorBottom: $colorBottom, imageCircle: "slICahrging")
+                    .frame(width: 273)
             }
-            
             HStack {
-                Spacer().frame(width: 228)
+                Spacer().frame(width: 250)
                 Image(.seventyFive)
-                Spacer().frame(width: 38)
+                Spacer().frame(width: 28)
                 Image(.hundred)
                 Spacer()
             }
+            .offset(x: -5, y: 30)
         }
     }
     
     
     private var batteryСhargeAsPercentage: some View {
-        Text("\(valueDegrees.formatted(.number)) %")
+        Text("\(value.formatted(.number)) %")
             .font(.system(size: 34))
             .fontWeight(.semibold)
     }
@@ -165,7 +153,7 @@ struct ChargingView: View {
             Text("Set Charge Limit")
                 .foregroundStyle(.gray)
         }
-        
+
     }
     
     private var nearbySuperchargersView: some View {

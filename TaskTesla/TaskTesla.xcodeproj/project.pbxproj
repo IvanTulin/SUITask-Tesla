@@ -36,6 +36,7 @@
 		BAB6D0262BF6822200127E22 /* TeslaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6D0252BF6822200127E22 /* TeslaTabView.swift */; };
 		BAB6D02B2BF69E8B00127E22 /* ExplorerScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6D02A2BF69E8B00127E22 /* ExplorerScreenView.swift */; };
 		BAB6D02D2BF69EF400127E22 /* ChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6D02C2BF69EF400127E22 /* ChargingView.swift */; };
+		BAC1147A2BFB356E00CEAFCF /* ChargingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC114792BFB356E00CEAFCF /* ChargingSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		BAB6D0252BF6822200127E22 /* TeslaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaTabView.swift; sourceTree = "<group>"; };
 		BAB6D02A2BF69E8B00127E22 /* ExplorerScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerScreenView.swift; sourceTree = "<group>"; };
 		BAB6D02C2BF69EF400127E22 /* ChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingView.swift; sourceTree = "<group>"; };
+		BAC114792BFB356E00CEAFCF /* ChargingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				BA5FBEC32BF281E700C99757 /* TaskTeslaApp.swift */,
 				BAB6D02A2BF69E8B00127E22 /* ExplorerScreenView.swift */,
+				BAC1147B2BFB388800CEAFCF /* Sliders */,
 				BAFF60032BF77AF200280A4B /* ChargingScreen */,
 				BAB6D0162BF646CD00127E22 /* StartScreen */,
 				BAB6D0202BF66AFA00127E22 /* SettingsScreen */,
@@ -139,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				BA610DDC2BF3BD610066AA21 /* ClimateSystemsView.swift */,
-				BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */,
 				BA610DDF2BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift */,
 				BA6928B72BF4DE77003B220E /* BlurView.swift */,
 				BA6928B92BF4DFF9003B220E /* Corner.swift */,
@@ -203,6 +205,15 @@
 				BAB6D0192BF64DE100127E22 /* CustomTabView.swift */,
 			);
 			path = CustomTabView;
+			sourceTree = "<group>";
+		};
+		BAC1147B2BFB388800CEAFCF /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				BAC114792BFB356E00CEAFCF /* ChargingSlider.swift */,
+				BA975EBD2BF48FDC005831B9 /* ClimateControlSlider.swift */,
+			);
+			path = Sliders;
 			sourceTree = "<group>";
 		};
 		BAFF60032BF77AF200280A4B /* ChargingScreen */ = {
@@ -299,6 +310,7 @@
 				BA610DD72BF3AB6C0066AA21 /* NeumorphismSelected.swift in Sources */,
 				BAB6D02B2BF69E8B00127E22 /* ExplorerScreenView.swift in Sources */,
 				BA2CB7A32BF8CA7300ED4F72 /* BatteryCharge.swift in Sources */,
+				BAC1147A2BFB356E00CEAFCF /* ChargingSlider.swift in Sources */,
 				BA6C464D2BF35ADF008F2AE6 /* StartScreenView.swift in Sources */,
 				BAB6D01C2BF65FD500127E22 /* CustonNavigationLink.swift in Sources */,
 				BA6C464B2BF347CC008F2AE6 /* View + Extension.swift in Sources */,
