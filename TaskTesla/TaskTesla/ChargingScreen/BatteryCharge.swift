@@ -30,9 +30,6 @@ struct BatteryCharge: Shape {
         path.addCurve(to: CGPoint(x: 0.02452*width, y: 0.60739*height), control1: CGPoint(x: 0.02465*width, y: 0.59444*height), control2: CGPoint(x: 0.02449*width, y: 0.6009*height))
         path.closeSubpath()
         
-        //
-        //
-        
         path.move(to: CGPoint(x: 0.02452*width, y: 0.60739*height))
         path.addLine(to: CGPoint(x: 0.02601*width, y: 0.9284*height))
         path.addCurve(to: CGPoint(x: 0.03299*width, y: 0.97561*height), control1: CGPoint(x: 0.02613*width, y: 0.95472*height), control2: CGPoint(x: 0.02922*width, y: 0.97561*height))

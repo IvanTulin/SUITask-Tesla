@@ -7,34 +7,6 @@
 
 import SwiftUI
 
-struct TeslaTabItem: Identifiable, Equatable {
-    var id = UUID()
-    var text: String
-    var icon: String
-}
-
-struct TeslaTabItemPreferenceKey: PreferenceKey {
-    static var defaultValue: [TeslaTabItem] = []
-    
-    static func reduce(value: inout [TeslaTabItem], nextValue: () -> [TeslaTabItem]) {
-        value += nextValue()
-    }
-}
-
-struct TeslaTabItemModifier: ViewModifier {
-    let tabBarItem: TeslaTabItem
-    
-    func body(content: Content) -> some View {
-        content
-            .preference(key: TeslaTabItemPreferenceKey.self, value: [tabBarItem])
-    }
-}
-
-extension View {
-    func myTabItem(_ label: () -> TeslaTabItem) -> some View {
-        modifier(TeslaTabItemModifier(tabBarItem: label()))
-    }
-}
 
 struct TeslaTabView<Content: View>: View {
     var body: some View {

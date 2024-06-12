@@ -28,3 +28,9 @@ extension View {
         modifier(NeumorphismSelectedBackCircule())
     }
 }
+
+extension View {
+    func myTabItem(_ label: () -> TeslaTabItem) -> some View {
+        modifier(TeslaTabItemModifier(tabBarItem: label()))
+    }
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA11727C2C1A33400059DC86 /* TeslaTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11727B2C1A33400059DC86 /* TeslaTabItem.swift */; };
+		BA11727E2C1A33570059DC86 /* TeslaTabItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11727D2C1A33570059DC86 /* TeslaTabItemPreferenceKey.swift */; };
+		BA1172802C1A33970059DC86 /* TeslaTabItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11727F2C1A33970059DC86 /* TeslaTabItemModifier.swift */; };
 		BA2CB7A32BF8CA7300ED4F72 /* BatteryCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2CB7A22BF8CA7300ED4F72 /* BatteryCharge.swift */; };
 		BA5FBEC42BF281E700C99757 /* TaskTeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FBEC32BF281E700C99757 /* TaskTeslaApp.swift */; };
 		BA5FBEC62BF281E700C99757 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5FBEC52BF281E700C99757 /* SettingsScreenView.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA11727B2C1A33400059DC86 /* TeslaTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaTabItem.swift; sourceTree = "<group>"; };
+		BA11727D2C1A33570059DC86 /* TeslaTabItemPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaTabItemPreferenceKey.swift; sourceTree = "<group>"; };
+		BA11727F2C1A33970059DC86 /* TeslaTabItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaTabItemModifier.swift; sourceTree = "<group>"; };
 		BA2CB7A22BF8CA7300ED4F72 /* BatteryCharge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCharge.swift; sourceTree = "<group>"; };
 		BA5FBEC02BF281E700C99757 /* TaskTesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5FBEC32BF281E700C99757 /* TaskTeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTeslaApp.swift; sourceTree = "<group>"; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA11727A2C1A33160059DC86 /* TeslaTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6D0252BF6822200127E22 /* TeslaTabView.swift */,
+				BA11727D2C1A33570059DC86 /* TeslaTabItemPreferenceKey.swift */,
+				BA11727B2C1A33400059DC86 /* TeslaTabItem.swift */,
+			);
+			path = TeslaTabBar;
+			sourceTree = "<group>";
+		};
 		BA5FBEB72BF281E700C99757 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +146,7 @@
 		BA610DD32BF3AB240066AA21 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				BA11727F2C1A33970059DC86 /* TeslaTabItemModifier.swift */,
 				BA610DD42BF3AB500066AA21 /* NeumorphismUnSelected.swift */,
 				BA610DDA2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift */,
 				BA610DD82BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift */,
@@ -192,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5FBEC52BF281E700C99757 /* SettingsScreenView.swift */,
-				BAB6D0252BF6822200127E22 /* TeslaTabView.swift */,
+				BA11727A2C1A33160059DC86 /* TeslaTabBar */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -307,6 +324,7 @@
 				BAB6D0262BF6822200127E22 /* TeslaTabView.swift in Sources */,
 				BA6928BA2BF4DFF9003B220E /* Corner.swift in Sources */,
 				BA5FBEC42BF281E700C99757 /* TaskTeslaApp.swift in Sources */,
+				BA1172802C1A33970059DC86 /* TeslaTabItemModifier.swift in Sources */,
 				BA610DD72BF3AB6C0066AA21 /* NeumorphismSelected.swift in Sources */,
 				BAB6D02B2BF69E8B00127E22 /* ExplorerScreenView.swift in Sources */,
 				BA2CB7A32BF8CA7300ED4F72 /* BatteryCharge.swift in Sources */,
@@ -317,12 +335,14 @@
 				BA610DD92BF3AB870066AA21 /* NeumorphismUnSelectedCircule.swift in Sources */,
 				BAA0F13F2BF5FB9A004B203F /* MatchedGeometryEffectView.swift in Sources */,
 				BA6C46452BF3364A008F2AE6 /* ButtomSheetView.swift in Sources */,
+				BA11727C2C1A33400059DC86 /* TeslaTabItem.swift in Sources */,
 				BAB6D01F2BF6610A00127E22 /* Navigation+Extension.swift in Sources */,
 				BA610DDD2BF3BD610066AA21 /* ClimateSystemsView.swift in Sources */,
 				BAB6D0242BF66E2900127E22 /* ContolTabView2.swift in Sources */,
 				BA610DDB2BF3AC380066AA21 /* NeumorphismSelectedSettings.swift in Sources */,
 				BA610DE02BF3E5CF0066AA21 /* ClimateSystemsViewModel.swift in Sources */,
 				BA975EBE2BF48FDC005831B9 /* ClimateControlSlider.swift in Sources */,
+				BA11727E2C1A33570059DC86 /* TeslaTabItemPreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
